@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Mentorix | Mentorix</title>
+  <meta name="description" content="Contact Mentorix HR team in Lahore, Pakistan.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <span>Office-based tutor hiring and training company in Lahore</span>
+      <span>Lahore, Pakistan | WhatsApp: <a href="https://wa.me/923234816471" target="_blank">+92 323 4816471</a> | Email: <a href="mailto:engr2.ammarkhan@gmail.com">engr2.ammarkhan@gmail.com</a></span>
+    </div>
+  </div>
+
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo"><span class="logo-mark">M</span> Mentor<span class="gold">ix</span></a>
+      <nav>
+        <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="careers.html">Careers</a></li><li><a href="apply.html">Apply</a></li><li><a href="hiring-process.html">Process</a></li><li><a href="training.html">Training</a></li><li><a href="subjects.html">Subjects</a></li><li><a href="contract-policy.html">Policy</a></li><li><a href="faqs.html">FAQs</a></li><li><a class="btn" href="apply.html">Apply Now</a></li></ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    
+<section class="page-hero">
+  <div class="container">
+    <span class="badge">Mentorix</span>
+    <h1>Contact Mentorix</h1>
+    <p>Contact Mentorix HR team in Lahore, Pakistan.</p>
+  </div>
+</section>
+
+    
+<section>
+  <div class="container form-wrap">
+    <div class="info-box">
+      <h3>Contact information</h3>
+      <p>For hiring, interviews, training, and contract-related queries, contact Mentorix through WhatsApp or email.</p>
+      <p><strong>Address:</strong><br>L-8, Haroon Park, Opposite Cheeious, Sheikhupura Road, Jia Musa, Lahore, Pakistan</p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/923234816471" target="_blank">+92 323 4816471</a></p>
+      <p><strong>Email:</strong> <a href="mailto:engr2.ammarkhan@gmail.com">engr2.ammarkhan@gmail.com</a></p>
+      <p><strong>Office Visit:</strong> Please contact first before visiting the office.</p>
+      <p><strong>Map:</strong> Google Map location will be added later.</p>
+    </div>
+    <form onsubmit="sendContact(event)">
+      <h3>Send a message</h3>
+      <div class="form-row"><input name="name" type="text" placeholder="Your Name" required><input name="phone" type="tel" placeholder="WhatsApp Number" required></div>
+      <input name="email" type="email" placeholder="Email Address" required>
+      <select name="reason" required><option value="">Reason for Contact</option><option>Apply as Tutor</option><option>Interview Query</option><option>Training Query</option><option>Contract Query</option><option>Office Location Query</option><option>Other</option></select>
+      <textarea name="message" placeholder="Write your message..."></textarea>
+      <div class="form-actions">
+        <button type="submit" class="btn dark">Send via WhatsApp + Email</button>
+        <a class="btn whatsapp" href="https://wa.me/923234816471" target="_blank">WhatsApp Now</a>
+      </div>
+    </form>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3>Mentorix</h3>
+        <p>Mentorix is a Lahore-based tutor hiring and training company creating office-based online teaching opportunities for serious candidates.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="careers.html">Careers</a>
+        <a href="hiring-process.html">Hiring Process</a>
+        <a href="contract-policy.html">Contract Policy</a>
+      </div>
+      <div>
+        <h4>Hiring</h4>
+        <a href="apply.html">Apply Now</a>
+        <a href="training.html">Training</a>
+        <a href="subjects.html">Subjects</a>
+        <a href="faqs.html">FAQs</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>L-8, Haroon Park, Opposite Cheeious, Sheikhupura Road, Jia Musa, Lahore, Pakistan</p>
+        <a href="https://wa.me/923234816471" target="_blank">WhatsApp: +92 323 4816471</a>
+        <a href="mailto:engr2.ammarkhan@gmail.com">Email: engr2.ammarkhan@gmail.com</a>
+      </div>
+    </div>
+    <div class="container copyright">© 2026 Mentorix. All Rights Reserved.</div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/923234816471?text=Hello%20Mentorix%2C%20I%20want%20to%20apply%20as%20a%20tutor." target="_blank">💬 WhatsApp</a>
+  
+<script>
+function sendContact(event) {
+  event.preventDefault();
+  const d = new FormData(event.target);
+  const msg = `Hello Mentorix,
+
+Name: ${d.get('name') || ''}
+WhatsApp: ${d.get('phone') || ''}
+Email: ${d.get('email') || ''}
+Reason: ${d.get('reason') || ''}
+
+Message:
+${d.get('message') || ''}`;
+
+  window.open("https://wa.me/923234816471?text=" + encodeURIComponent(msg), "_blank");
+  setTimeout(function() {
+    window.location.href = "mailto:engr2.ammarkhan@gmail.com?subject=" + encodeURIComponent("Website Contact Query - Mentorix") + "&body=" + encodeURIComponent(msg);
+  }, 800);
+}
+</script>
+
+</body>
+</html>
